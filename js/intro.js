@@ -6,6 +6,14 @@ function animateDoors(){
     
     $(linkse).addClass("animate");
     $(rechtse).addClass("animate2");
+
+    setTimeout(function(){
+        $('.container2').addClass("animate3");
+    }, 5000);
+    
+   
+
+
 }
 
 function leftArrowPressed() {
@@ -24,7 +32,6 @@ function leftArrowPressed() {
  }
  
  document.onkeydown = function(evt) {
-     animateDoors();
      evt = evt || window.event;
      switch (evt.keyCode) {
          case 37:
@@ -34,4 +41,7 @@ function leftArrowPressed() {
              rightArrowPressed();
              break;
      }
+
+     animateDoors();
+
  };

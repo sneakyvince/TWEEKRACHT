@@ -116,7 +116,7 @@ body {
 .container, .container2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100vh
+    grid-template-rows: 100vh;
     justify-items: center;
     align-items: center;
     width: 100%;
@@ -161,6 +161,10 @@ body {
     -webkit-animation-delay: 1s;
     animation: slide 3s forwards;
     animation-delay: 1s;
+}
+
+.animate3 {
+    background: url('../img/licht.mp4')
 }
 
 @-webkit-keyframes slide {
