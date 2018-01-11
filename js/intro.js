@@ -1,7 +1,9 @@
 function leftArrowPressed() {
-    
+
     console.log("left");
-    $(video).addClass("visible");
+
+    var vid = document.getElementById("play"); 
+    vid.play();
 
     setTimeout(function(){
         window.location.href ='pages/dromen.html';
