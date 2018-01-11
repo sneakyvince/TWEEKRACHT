@@ -163,10 +163,10 @@ body {
     animation-delay: 1s;
 }
 
-.animate3 {
-    background: url('../img/licht.mp4')
-}
 
+video {
+    object-fit: fill;
+}
 @-webkit-keyframes slide {
     100% { margin-left: -720px; }
 }
@@ -296,7 +296,11 @@ body {
  */
 
 .invisible {
-    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    display: inline-block!important;
 }
 
 

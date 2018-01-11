@@ -1,34 +1,12 @@
-
-
-var linkse = document.getElementById( 'deurlinks' );
-var rechtse = document.getElementById( 'deurrechts' );
-function animateDoors(){
-    
-    $(linkse).addClass("animate");
-    $(rechtse).addClass("animate2");
-
-    setTimeout(function(){
-        $('.container2').addClass("animate3");
-    }, 5000);
-    
-   
-
-
-}
-
 function leftArrowPressed() {
     
+    console.log("left");
+    $(video).addClass("visible");
+
     setTimeout(function(){
-        window.location.href ='dromen.html';
-    }, 50000);
+        window.location.href ='pages/dromen.html';
+    }, 3000);
     
- }
- 
- function rightArrowPressed() {
-    
-    setTimeout(function(){
-        window.location.href ='durven.html';
-    }, 200000);
  }
  
  document.onkeydown = function(evt) {
@@ -41,7 +19,5 @@ function leftArrowPressed() {
              rightArrowPressed();
              break;
      }
-
-     animateDoors();
 
  };
