@@ -6,6 +6,9 @@ $('.door2').click(function () {
     $('.door2').toggleClass('doorOpen');
 });
 
+$('.door3').click(function () {
+    $('.door3').toggleClass('doorOpen');
+});
 
 function leftArrowPressed() {
     $('.door').toggleClass('doorOpen');
@@ -24,6 +27,14 @@ function rightArrowPressed() {
     }, 2000);
 }
 
+function upArrowPressed() {
+    $('.door3').toggleClass('doorOpen');
+
+    setTimeout(function () {
+        window.location.href = $('.pageDirection.up').attr('id') + '.html';
+    }, 2000);
+}
+
 document.onkeydown = function (evt) {
 
     evt = evt || window.event;
@@ -33,6 +44,9 @@ document.onkeydown = function (evt) {
             break;
         case 39:
             rightArrowPressed();
+            break;
+        case 38:
+            upArrowPressed();
             break;
     }
 };

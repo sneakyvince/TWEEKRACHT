@@ -137,7 +137,8 @@ body {
 }
 
 .door,
-.door2 {
+.door2,
+.door3 {
     background-color: #c52a31;
     position: absolute;
     top: 0px;
