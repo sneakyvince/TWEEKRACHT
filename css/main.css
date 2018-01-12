@@ -162,6 +162,13 @@ body {
     transform: perspective(75vw) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 }
 
+p {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 35%;
+    font-size: 2em;
+}
 
 /* ==========================================================================
    Helper classes
